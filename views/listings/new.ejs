@@ -1,0 +1,65 @@
+<% layout('/layouts/boilerplate.ejs') %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+<body>
+    <h3>Create a New Listing</h3>
+    <!-- For custom Bootstrap form validation messages,
+      you’ll need to add the novalidate boolean attribute to your <form>. 
+        This disables the browser default feedback tooltips, 
+        but still provides access to the form validation APIs in JavaScript. -->
+    <form method="POST" action="/listingz" novalidate class="needs-validation">
+
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="jvobj[title]" placeholder="enter title" type="text" class="form-control" required />
+            <!-- success and failure text -->
+            <div class="valid-feedback">
+                Title looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please provide a valid title.
+              </div>
+        </div>
+        <br /><br />
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="jvobj[description]" placeholder="enter description" class="form-control" required></textarea>
+            <div class="invalid-feedback">
+                Please provide a valid Description.
+              </div>
+        </div>
+        <br /><br />
+        <div class="mb-3">
+            <label for="image" class="form-label">Image Link</label>
+            <input name="jvobj[image][url]" placeholder="enter image URL/Link" type="text" class="form-control"/>
+        </div>
+        <br /><br />
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="jvobj[price]" placeholder="enter price" type="number" class="form-control" required />
+            <div class="invalid-feedback">
+                Please provide a valid Price.
+              </div>
+        </div>
+        <br /><br />
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <br>
+            <input name="jvobj[country]" placeholder="enter country" type="text" class="form-control" required />
+            <div class="invalid-feedback">
+                Please provide a valid Country.
+              </div>
+        </div>
+        <br /><br />
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input name="jvobj[location]"  placeholder="enter location" type="text" class="form-control" required/>
+            <div class="invalid-feedback">
+                Please provide a valid Location.
+              </div>
+        </div>
+        <button class="btn btn-dark add-btn mt-3 mb-3">Add</button>
+    </form>
+</body>
+</div>
+</div>

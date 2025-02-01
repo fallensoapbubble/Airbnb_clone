@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 50px;
+  color: white;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #ff8c00;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.welcome-section {
+  margin: 20px;
+}
+
+.destination-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.destination-card {
+  text-align: center;
+  width: 300px;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.destination-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}

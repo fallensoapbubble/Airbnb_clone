@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Expess Router</h2>
+    <ul>
+        <li>https://expressjs.com/en/guide/routing.html</li>
+        <li>to avoid bloating of app.js</li>
+        <li>~/airbnbproj/routes (master)    
+            $ touch listing.js</li>
+    </ul>
+    <h2>cookies</h2>
+    <ul>
+        <li>when user browsing website</li>
+        <li>web server places blocks of data on user computer called cookies</li>
+        <li>uses:-  are session mgmtt and tracking</li>
+        <li>inspect- application- cookies -- saved to chrome by ur site visited</li>
+        <li>https://expressjs.com/en/4x/api.html#res.cookie</li>
+        <li>$ npm install cookie-parser        </li>
+
+    </ul>
+    <ol>
+        <h3>signed cookie</h3>
+        <li>to avoid tampering of cookies</li>
+        <li>https://expressjs.com/en/resources/middleware/cookie-parser.html</li>
+    
+    </ol>
+    <h2>sessions/stateful is ftp saves data wo login on webserver / stateless is http</h2>
+    <ul>
+        <li>now to create stateful http-</li>
+        <li>https://expressjs.com/en/resources/middleware/cookie-session.html</li>
+        <li>using session id in the form of cookie it is saved/also saved in web server side in temp memory</li>
+        <li>browser changes then session id differs</li>
+        <li>https://www.npmjs.com/package/express-session</li>
+        <li>https://www.npmjs.com/package/connect-flash</li>
+    </ul>
+    <hr>
+    <img src="https://www.ssl2buy.com/wp-content/uploads/2019/04/authentication-vs-authorization.jpg" alt="">
+    <hr>
+    <h2>Hashing</h2>
+    <ul>
+        <li>https://bcrypt.online/</li>
+        <li>https://www.md5hashgenerator.com/</li>
+        <li>https://xorbin.com/tools/sha256-hash-calculator</li>
+    </ul>
+    <hr>
+    <img src="https://cyberhoot.com/wp-content/uploads/2020/05/Hash-plus-Salt-1.png" alt="">
+    <p>Reverse lookup table attacks
+        By hashing the password on the client before it is transmitted and enforcing a strong password policy will protect against brute-force attacks against a single user. However, if a malicious party is able to obtain a substantial portion of the user database, they can instead perform another type of attack called a reverse lookup table attack.
+        
+        In this attack method, the malicious party would search the compromised database for digests whose original message is already known, in order to obtain a list of user accounts that use that digest, and thus the same password.</p>
+    <hr>
+    <h2>Passport</h2>
+    <ul>
+        <li>https://www.npmjs.com/package/passport</li>
+        <li>https://www.passportjs.org/</li>
+        <li>$ npm i passport</li>
+        <li>$ npm i passport-local</li>
+        <li>$ npm i passport-local-mongoose</li>
+    </ul>
+    <h2>cloud and file</h2>
+    <ul>
+        <li>https://cloudinary.com/</li>
+        <li>https://www.npmjs.com/package/multer</li>
+        <li> create env file -env file is used in projects to store configuration settings, environment variables, and sensitive information securel</li>
+        <li>https://www.npmjs.com/package/dotenv</li>
+    </ul>
+    <h2>cloud library to install</h2>
+    <ul>
+        <li>https://www.npmjs.com/package/cloudinary</li>
+        <li>https://www.npmjs.com/package/multer-storage-cloudinary</li>
+    </ul>
+    <h2>add map functionalities</h2>
+    <ul>
+        <li>map box</li>
+        <li>public token here</li>
+        <li>geocoding using - https://docs.mapbox.com/api/search/geocoding/</li>
+        <li>https://github.com/mapbox/mapbox-sdk-js</li>
+        <li>coordinate datatype in mongoose is geojson format - https://www.mongodb.com/docs/manual/reference/geojson/</li>
+        <li>https://docs.mapbox.com/mapbox-gl-js/example/add-a-marker/</li>
+        <li>https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/</li>
+        <li>https://docs.mapbox.com/mapbox-gl-js/example/popup-on-hover/</li>
+    </ul>
+    <h2>Hosting project using Mongo Atlas</h2>
+    <ul>
+        <li>https://www.mongodb.com/products/platform/atlas-database</li>
+        <li>https://www.npmjs.com/package/connect-mongo</li>
+    </ul>
+    <h2>DEPLOYMENT</h2>
+    <ul>
+        <li>https://render.com/</li>
+        <li>netlify</li>
+        <li>cyclic</li>
+        <li>connect render to git</li>
+
+    </ul>
+</body>
+</html>
